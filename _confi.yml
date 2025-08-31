@@ -8,10 +8,12 @@ url: "https://jshimandle.github.io"
 # Build settings
 markdown: kramdown
 # theme: minima
-# theme: jekyll-theme-slate
+# remote_theme: daviddarnes/alembic@main
 # theme: jekyll-theme-minimal
 
-remote_theme: daviddarnes/alembic@main
+theme: jekyll-theme-slate
+
+
 
 plugins:
   - jekyll-feed
