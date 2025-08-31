@@ -1,1 +1,16 @@
-theme: jekyll-theme-primer
+# theme: jekyll-theme-primer
+
+title: Josiah Shimandle
+description: Personal Portfolio Website
+baseurl: ""
+url: "https://jshimandle.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Social links (optional)
+github_username: jshimandle
+linkedin_username: https://www.linkedin.com/in/josiah-shimandle/
