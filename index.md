@@ -12,7 +12,7 @@ I'm a final year mechanical engineering student at MIT pursuing a B.S. in Mechan
 
 ## Featured Projects
 
-(coming soon) Check out my [projects page](/projects) to see what I've been working on.
+Check out my [projects page](/projects) to see what I've been working on.
 
 
 
