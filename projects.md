@@ -8,5 +8,6 @@ title: Projects
 ## Experimental Analysis Soil as a Thermal Storage Medium	(Spring 2025)
 - Studied effects of different soil properties on performance of soil-based thermal storage, as a potential low-cost medium for scalable off-grid energy storage.
 - Collected >100 hours of data across 9 different soil mixtures, demonstrating significant positive relationship between thermal storage efficiency and soil water content and density.
-Description of your project with [GitHub link](https://github.com/jshimandle/project1).
+- [Associated paper linked here](Shimandle_J_FinalPaper_2Column.pdf)
+
 
