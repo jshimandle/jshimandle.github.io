@@ -3,15 +3,13 @@ layout: page
 title: About
 ---
 
-# About Me
-
-## Skills
+## SKILLS
 - **Programming**: MATLAB, Python, R.
 - **Software**: SOLIDWORKS, Autodesk Fusion, COMSOL.
 - **Measurement**: Nonlinear system ID, gas sensing, sorption analysis, thermogravimetric analysis.
 - **Design & Fabrication**: Design for manufacturing, FDM & SLA printing, laser cutter, manual mill & lathe, CNC mill, water jet, injection molding, thermoforming, woodworking, MIG welding, arc welding, glass blowing.
 
-## Research Experience
+## RESEARCH EXPERIENCE
 ### MIT Media Lab, Space Enabled Research Group (*Cambridge, MA*)
 — *Undergraduate Researcher* (June 2025 to Present)
 - Exploring CubeSat technology in indigenous communities as a tool for engineering education, environmental monitoring, and expanded data sovereignty.
@@ -41,7 +39,7 @@ title: About
 - Examined relationships between tree seasonality patterns and soil fungi type.
 - Analyzed public environmental datasets with R driven statistical techniques.
 
-## Industry & Field Work
+## INDUSTRY & FIELD WORK
 ### Dedan Kimathi University of Technology (DeKUT)	(*Nyeri, Kenya*)
 — *Practical Field Lab Student*	(January to February 2025)
 - Collaborated with Kenyan engineering students to work with Kenyan fish farmers to assess and develop technology to address challenges in value addition and farm operation.
@@ -54,7 +52,7 @@ title: About
 - Led a team of 2 other engineering students in the redesign of a payload box and deployment mechanism to increase storage volume to weight ratio by over 46%.
 - Individually developed prototype fuselage to allow for low-cost, local fabrication.
 
-## Teaching	Experience
+## TEACHING EXPERIENCE
 ### Thermal-Fluids Engineering II
 — *Undergraduate Assistant* (Spring 2025)
 - Guided undergraduate students through conceptual and practical content questions.
