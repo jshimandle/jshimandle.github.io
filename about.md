@@ -54,11 +54,6 @@ title: About
 - Led a team of 2 other engineering students in the redesign of a payload box and deployment mechanism to increase storage volume to weight ratio by over 46%.
 - Individually developed prototype fuselage to allow for low-cost, local fabrication.
 
-## Projects
-### Experimental Analysis Soil as a Thermal Storage Medium	(Spring 2025)
-- Studied effects of different soil properties on performance of soil-based thermal storage, as a potential low-cost medium for scalable off-grid energy storage.
-- Collected >100 hours of data across 9 different soil mixtures, demonstrating significant positive relationship between thermal storage efficiency and soil water content and density.
-
 ## Teaching	Experience
 ### Thermal-Fluids Engineering II
 — *Undergraduate Assistant* (Spring 2025)
