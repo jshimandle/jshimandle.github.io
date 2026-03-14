@@ -1,14 +1,49 @@
 ---
 layout: default
 ---
+<article class="post container">
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="post-category">{{ page.category | default: "Writing" }}</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.read_time %}<span class="read-time">{{ page.read_time }} min read</span>{% endif %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+    {% if page.cover_image %}
+    <figure class="post-cover">
+      <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title }}" />
+      {% if page.cover_caption %}<figcaption>{{ page.cover_caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+  </header>
 
-<article>
-    <header>
-        <h1>{{ page.title }}</h1>
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date: '%B %d, %Y' }}
-        </time>
-    </header>
-    
+  <div class="post-body">
     {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <nav class="post-nav">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="post-nav-link post-nav-prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">{{ page.previous.title }}</span>
+      </a>
+      {% endif %}
+      {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="post-nav-link post-nav-next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">{{ page.next.title }}</span>
+      </a>
+      {% endif %}
+    </nav>
+  </footer>
 </article>

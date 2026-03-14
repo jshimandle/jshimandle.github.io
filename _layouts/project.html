@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<article class="project-detail container">
+  <header class="project-detail-header">
+    <a href="{{ '/projects/' | relative_url }}" class="back-link">← All Projects</a>
+    <div class="project-meta-bar">
+      <span class="project-tag">{{ page.category | default: "Engineering" }}</span>
+      {% if page.date %}<time>{{ page.date | date: "%Y" }}</time>{% endif %}
+      {% if page.status %}<span class="project-status status-{{ page.status | downcase }}">{{ page.status }}</span>{% endif %}
+    </div>
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="project-subtitle">{{ page.subtitle }}</p>{% endif %}
+
+    {% if page.stats %}
+    <ul class="project-stats">
+      {% for stat in page.stats %}
+      <li><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if page.hero_image %}
+    <figure class="project-hero">
+      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}" />
+    </figure>
+    {% endif %}
+  </header>
+
+  <div class="project-body">
+    {% if page.skills %}
+    <aside class="project-sidebar">
+      <h3>Skills & Tools</h3>
+      <ul class="skill-list">
+        {% for skill in page.skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+      {% if page.links %}
+      <h3>Links</h3>
+      <ul class="project-links">
+        {% for link in page.links %}
+        <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </aside>
+    {% endif %}
+
+    <div class="project-content">
+      {{ content }}
+    </div>
+  </div>
+
+  {% if page.gallery %}
+  <section class="project-gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      {% for image in page.gallery %}
+      <figure class="gallery-item">
+        <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}" loading="lazy" />
+        {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</article>

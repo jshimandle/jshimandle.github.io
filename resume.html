@@ -1,0 +1,167 @@
+---
+layout: default
+title: Resume
+description: "Resume and CV."
+permalink: /resume/
+---
+
+<div class="container resume-page">
+  <div class="resume-header">
+    <div>
+      <p class="section-label">Credentials</p>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);">Resume / CV</h1>
+    </div>
+    <div style="display:flex;gap:.8rem;flex-wrap:wrap;">
+      <!-- (*) Upload your PDF to assets/ and update this link -->
+      <a href="{{ '/assets/resume.pdf' | relative_url }}" class="btn btn-primary" download>
+        <i data-feather="download"></i> Download PDF
+      </a>
+      <a href="{{ '/assets/transcript.pdf' | relative_url }}" class="btn btn-outline" download>
+        <i data-feather="file-text"></i> Transcript
+      </a>
+    </div>
+  </div>
+
+  <!-- ── EDUCATION ─────────────────────────────────────────── -->
+  <section class="resume-section reveal">
+    <h2>Education</h2>
+
+    <!-- (*) Edit these entries -->
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <div>
+          <h3>{{ site.education.university }}</h3>
+          <p class="resume-entry-sub">{{ site.education.degree }}</p>
+        </div>
+        <span class="resume-entry-date">{{ site.education.year }}</span>
+      </div>
+      <ul>
+        <li>GPA: X.XX / 4.0</li>
+        <li>Relevant Coursework: Statics, Dynamics, Thermodynamics, Fluid Mechanics, Machine Design, FEA, Manufacturing Processes</li>
+        <li>Honors / Awards (if any)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ────────────────────────────────────────── -->
+  <section class="resume-section reveal">
+    <h2>Experience</h2>
+
+    <!-- (*) Add your internships / research / jobs here -->
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <div>
+          <h3>Job Title or Role</h3>
+          <p class="resume-entry-sub">Company / Organization · City, State</p>
+        </div>
+        <span class="resume-entry-date">May 2024 – Aug 2024</span>
+      </div>
+      <ul>
+        <li>Describe what you did. Use strong action verbs and quantify results where possible.</li>
+        <li>Designed and fabricated X, improving Y by Z%.</li>
+        <li>Collaborated with a team of N engineers on …</li>
+      </ul>
+    </div>
+
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <div>
+          <h3>Undergraduate Research Assistant</h3>
+          <p class="resume-entry-sub">Lab Name, {{ site.education.university }}</p>
+        </div>
+        <span class="resume-entry-date">Sep 2023 – Present</span>
+      </div>
+      <ul>
+        <li>Describe research contribution here.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────────── -->
+  <section class="resume-section reveal">
+    <h2>Selected Projects</h2>
+    {% for project in site.projects limit:4 %}
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <h3><a href="{{ project.url | relative_url }}" style="color:var(--ink);transition:color var(--transition);"
+               onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">
+          {{ project.title }}
+        </a></h3>
+        {% if project.date %}<span class="resume-entry-date">{{ project.date | date: "%Y" }}</span>{% endif %}
+      </div>
+      <p class="resume-entry-sub">{{ project.category }}</p>
+      <p style="font-size:.9rem;color:var(--ink-2);">{{ project.description | default: project.excerpt | strip_html | truncatewords: 30 }}</p>
+    </div>
+    {% endfor %}
+    {% if site.projects.size == 0 %}
+    <p style="color:var(--ink-3);font-size:.9rem;">Projects will appear here once you add them to _projects/.</p>
+    {% endif %}
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────────────────────── -->
+  <section class="resume-section reveal">
+    <h2>Skills</h2>
+
+    <div style="margin-bottom:1.5rem;">
+      <h4 style="font-size:.82rem;color:var(--ink-3);margin-bottom:.8rem;letter-spacing:.08em;">Software & Tools</h4>
+      <!-- (*) Edit these -->
+      <div class="skills-grid">
+        <span class="skill-item">SolidWorks</span>
+        <span class="skill-item">AutoCAD</span>
+        <span class="skill-item">ANSYS FEA</span>
+        <span class="skill-item">MATLAB</span>
+        <span class="skill-item">Python</span>
+        <span class="skill-item">LaTeX</span>
+        <span class="skill-item">Adobe Suite</span>
+        <span class="skill-item">Microsoft Office</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:1.5rem;">
+      <h4 style="font-size:.82rem;color:var(--ink-3);margin-bottom:.8rem;letter-spacing:.08em;">Fabrication</h4>
+      <div class="skills-grid">
+        <span class="skill-item">Machining (lathe, mill)</span>
+        <span class="skill-item">3D Printing / FDM</span>
+        <span class="skill-item">Welding (MIG)</span>
+        <span class="skill-item">Laser Cutting</span>
+        <span class="skill-item">PCB Soldering</span>
+      </div>
+    </div>
+
+    <div>
+      <h4 style="font-size:.82rem;color:var(--ink-3);margin-bottom:.8rem;letter-spacing:.08em;">Languages</h4>
+      <div class="skills-grid">
+        <span class="skill-item">English (native)</span>
+        <!-- (*) add others -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACTIVITIES ─────────────────────────────────────────── -->
+  <section class="resume-section reveal">
+    <h2>Activities & Leadership</h2>
+    <!-- (*) Edit -->
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <h3>Engineering Club / Team</h3>
+        <span class="resume-entry-date">2022 – Present</span>
+      </div>
+      <p class="resume-entry-sub">Role (e.g., Design Lead)</p>
+      <ul>
+        <li>Short description of responsibilities or achievements.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Embedded PDF preview (optional) ──────────────────── -->
+  <!--
+    Uncomment this block after uploading your PDF:
+  <section class="resume-section reveal">
+    <h2>Full PDF</h2>
+    <div class="pdf-embed">
+      <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%" title="Resume PDF"></iframe>
+    </div>
+  </section>
+  -->
+
+</div>

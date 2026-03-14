@@ -1,0 +1,115 @@
+---
+layout: default
+title: Blog
+description: "Essays, reflections, poetry, and other writing."
+permalink: /blog/
+---
+
+<div class="container blog-header reveal">
+  <p class="section-label">Writing</p>
+  <h1>Blog</h1>
+  <p class="lead" style="margin-top:.5rem;">
+    Essays, reflections, poetry, and notes from the margins.
+  </p>
+</div>
+
+<div class="container blog-grid">
+
+  <!-- ── Post list ──────────────────────────────────────────── -->
+  <main>
+    <div class="blog-posts">
+      {% for post in paginator.posts %}
+      <article class="post-article reveal">
+        <div class="post-meta">
+          {% if post.category %}<span class="post-category">{{ post.category }}</span>{% endif %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          {% if post.read_time %}<span style="font-size:.82rem;color:var(--ink-3);">{{ post.read_time }} min read</span>{% endif %}
+        </div>
+        <a href="{{ post.url | relative_url }}">
+          <h2 class="post-title">{{ post.title }}</h2>
+        </a>
+        {% if post.subtitle %}<p style="color:var(--ink-3);font-style:italic;margin-bottom:.4rem;">{{ post.subtitle }}</p>{% endif %}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 36 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">
+          Read more <i data-feather="arrow-right"></i>
+        </a>
+      </article>
+      {% endfor %}
+
+      {% if site.posts.size == 0 %}
+      <div style="text-align:center;padding:4rem;color:var(--ink-3);">
+        <i data-feather="edit" style="width:48px;height:48px;opacity:.3;margin-bottom:1rem;"></i>
+        <p>No posts yet. Create <code>.md</code> files in the <code>_posts/</code> folder.</p>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Pagination -->
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination" aria-label="Blog pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">← Newer</a>
+      {% endif %}
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <span class="current">{{ page }}</span>
+        {% elsif page == 1 %}
+        <a href="{{ '/blog/' | relative_url }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ '/blog/page' | append: page | relative_url }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Older →</a>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </main>
+
+  <!-- ── Sidebar ─────────────────────────────────────────────── -->
+  <aside class="blog-sidebar">
+
+    <!-- Categories -->
+    <div class="sidebar-section">
+      <h4>Categories</h4>
+      {% assign categories = site.posts | map: "category" | compact | uniq | sort %}
+      <div class="sidebar-tags">
+        {% for cat in categories %}
+        <a href="{{ '/blog/?category=' | append: cat | relative_url }}" class="tag">{{ cat }}</a>
+        {% endfor %}
+        {% if categories.size == 0 %}
+        <p style="font-size:.85rem;color:var(--ink-3);">No categories yet.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="sidebar-section">
+      <h4>Tags</h4>
+      {% assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+      <div class="sidebar-tags">
+        {% for tag in all_tags %}
+        <a href="{{ '/blog/?tag=' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+        {% if all_tags.size == 0 %}
+        <p style="font-size:.85rem;color:var(--ink-3);">No tags yet.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Recent posts -->
+    <div class="sidebar-section">
+      <h4>Recent Posts</h4>
+      {% for post in site.posts limit:5 %}
+      <div style="margin-bottom:.8rem;padding-bottom:.8rem;border-bottom:1px solid var(--border);">
+        <a href="{{ post.url | relative_url }}" style="font-size:.9rem;font-weight:500;color:var(--ink-2);transition:color var(--transition);"
+           onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink-2)'">
+          {{ post.title }}
+        </a>
+        <p style="font-size:.78rem;color:var(--ink-3);margin-top:.2rem;">{{ post.date | date: "%B %-d, %Y" }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </aside>
+</div>

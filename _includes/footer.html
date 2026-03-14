@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <p class="footer-name">{{ site.title }}</p>
+      <p class="footer-tagline">{{ site.tagline }}</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/resume/' | relative_url }}">Resume</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+        <i data-feather="github"></i>
+      </a>
+      {% endif %}
+      {% if site.author.linkedin %}
+      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i data-feather="linkedin"></i>
+      </a>
+      {% endif %}
+      {% if site.author.twitter %}
+      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+        <i data-feather="twitter"></i>
+      </a>
+      {% endif %}
+      {% if site.author.instagram %}
+      <a href="https://instagram.com/{{ site.author.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+        <i data-feather="instagram"></i>
+      </a>
+      {% endif %}
+      <a href="mailto:{{ site.author.email }}" aria-label="Email">
+        <i data-feather="mail"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}. Built with Jekyll &amp; hosted on GitHub Pages.</p>
+  </div>
+</footer>
