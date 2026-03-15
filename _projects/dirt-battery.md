@@ -33,7 +33,7 @@ gallery:
   - src: /assets/images/projects/poster_2671.png
     alt: "Poster"
     caption: "Final poster for the class."
-  - src: /assets/images/projects/poster_pose_2671.png
+  - src: /assets/images/projects/poster_pose_2671.jpg
     alt: "Poster presentation"
     caption: "Presenting the poster."
   - src: /assets/images/projects/expsetup_2671.jpg
