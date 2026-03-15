@@ -2,7 +2,7 @@
 title: "Soil Based Thermal Storage"
 subtitle: "Investigated the use of soil for thermal energy storage in resource-constrained settings."
 description: "Investigated the use of soil for thermal energy storage in resource-constrained settings."
-category: mechanical
+category: research
 date: 2025-05-01
 featured: true
 status: Completed
