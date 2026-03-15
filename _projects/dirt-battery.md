@@ -7,7 +7,7 @@ date: 2025-05-01
 featured: true
 status: Completed
 
-thumbnail: /assets/images/projects/poster_pose_2671.jpg
+thumbnail: /assets/images/projects/poster_pose_2671.jpeg
 hero_image: /assets/images/projects/poster_2671.png
 
 skills:
