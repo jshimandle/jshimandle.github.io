@@ -49,6 +49,7 @@ in rural, off-grid communities.
 ## Objectives
 
 ## Contributionsr of motors required to operate. Overall the ratio of usable volume to weight was increased by > 46%.
+
 Collected, processed, and analyzed >100 hours of experimental data across 9 soil compositions, demonstrating significant correlation between storage efficiency and water content/density.
 
 ## Outcomes
