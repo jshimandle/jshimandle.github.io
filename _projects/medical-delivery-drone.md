@@ -36,13 +36,13 @@ gallery:
   - src: /assets/images/projects/payloadbox_view3.png
     alt: "Payload box"
     caption: "Small prototype payload box to test mechanism."
-  - src: /assets/images/projects/fuselageCAD_view1
+  - src: /assets/images/projects/fuselageCAD_view1.png
     alt: "Fuselage CAD"
     caption: "Cross-section of CAD model for the complete drone body."
-  - src: /assets/images/projects/fuselage_view1
+  - src: /assets/images/projects/fuselage_view1.png
     alt: "Fuselage front"
     caption: "Front view of fully fabricated wooden fuselage."
-  - src: /assets/images/projects/fuselage_view2
+  - src: /assets/images/projects/fuselage_view2.png
     alt: "Fuselage back"
     caption: "Back view of fully fabricated wooden fuselage."
 
