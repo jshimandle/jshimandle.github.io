@@ -9,7 +9,8 @@ tags: [poetry]
 excerpt: "A prose poem."
 ---
 
-*A prose poem I wrote for my poetry workshop class, spring of 2026. About life and growing up.*
+*A prose poem I wrote for my poetry workshop class, spring of 2026.*
+*About life and growing up.*
 
 ---
 A car is revving its engine outside my bedroom window, and asking what it means to be a man. It wants to be big and strong and know what it means—and how it works—and who built it.
