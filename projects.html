@@ -37,7 +37,14 @@ permalink: /projects/
         {% endif %}
       </div>
       <div class="card-body">
-        <p class="card-category">{{ project.category | default: "Engineering" }}</p>
+        <div class="card-meta-row">
+          <p class="card-category">{{ project.category | default: "Engineering" }}</p>
+          {% if project.date %}
+          <time class="card-date" datetime="{{ project.date | date_to_xmlschema }}">
+            {{ project.date | date: "%b %Y" }}
+          </time>
+          {% endif %}
+        </div>
         <h2 class="card-title" style="font-size:1.15rem;">{{ project.title }}</h2>
         <p class="card-excerpt">{{ project.description | default: project.excerpt | strip_html | truncatewords: 22 }}</p>
         <div class="card-footer">
