@@ -3,10 +3,10 @@
 # ============================================================
 
 # (*) Your full name — appears in the nav logo and page titles
-title: "Your Name"
+title: "Josiah Shimandle"
 
 # (*) One-line tagline shown in the hero section
-tagline: "Mechanical Engineering Student & Creative"
+tagline: ""
 
 # (*) Short description used in meta tags
 description: "Portfolio of engineering projects, essays, photography, and creative work."
@@ -17,17 +17,17 @@ baseurl: ""  # leave empty unless repo is a project page (not username.github.io
 
 # (*) Fill in whichever you use; delete or leave blank the rest
 author:
-  name: "Your Name"
-  email: "you@email.com"
-  github: "yourusername"
-  linkedin: "yourlinkedin"
+  name: "Josiah Shimandle"
+  email: "jlshim@mit.edu"
+  github: "jshimandle"
+  linkedin: "https://www.linkedin.com/in/josiah-shimandle/"
   twitter: ""          # optional
   instagram: ""        # optional
 
 # (*) University / program info shown in About and Resume sections
 education:
-  university: "Your University"
-  degree: "B.S. Mechanical Engineering"
+  university: "MIT"
+  degree: "B.S. in Mechanical Engineering"
   year: "Class of 2026"
 
 # ── Jekyll internals ─────────────────────────────────────────
