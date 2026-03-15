@@ -1,0 +1,50 @@
+---
+title: "Soil Based Thermal Storage"
+subtitle: "Investigated the use of soil for thermal energy storage in resource-constrained settings."
+description: "Investigated the use of soil for thermal energy storage in resource-constrained settings."
+category: mechanical
+date: 2025-05-01
+featured: true
+status: Completed
+
+thumbnail: /assets/images/projects/poster_pose_2671.jpg
+hero_image: /assets/images/projects/poster_2671.png
+
+skills:
+  - Sensing
+  - Instrumentation
+  - Experimental Design
+  - Signal Analysis
+  - Data Visualization
+  - Heat Transfer
+
+stats:
+  - value: "12 weeks"
+    label: Duration
+
+gallery:
+  - src: /assets/images/projects/visual_abstract_2671.png
+    alt: "Visual abstract"
+    caption: "Visual abstract."
+  - src: /assets/images/projects/poster_2671.png
+    alt: "Poster"
+    caption: "Final poster for the class."
+  - src: /assets/images/projects/poster_pose_2671.jpg
+    alt: "Poster presentation"
+    caption: "Presenting the poster."
+    
+
+tags: [experimental design, instrumentation]
+---
+
+## Overview & Motivation
+I took MIT's Sensing and Instrumentation course in the spring of 2025. The focus of this course is an independent project focused on measuring something.
+I chose to characterize the performance of soil as a thermal storage medium, to explore the possibility of using dirt as a low-cost medium for energy storage
+in rural, off-grid communities.
+
+## Objectives
+
+## Contributionsr of motors required to operate. Overall the ratio of usable volume to weight was increased by > 46%.
+Collected, processed, and analyzed >100 hours of experimental data across 9 soil compositions, demonstrating significant correlation between storage efficiency and water content/density.
+
+## Outcomes
