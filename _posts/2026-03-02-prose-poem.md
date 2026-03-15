@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CAR ENGINES AND WHAT IT MEANS TO BE A MAN OR BEAUTIFUL DEATH OR THAT’S LIFE"
+title: "CAR ENGINES AND WHAT IT MEANS TO BE A MAN or BEAUTIFUL DEATH or THAT’S LIFE"
 subtitle: ""
 date: 2026-03-02
 category: Poetry
