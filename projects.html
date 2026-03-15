@@ -25,6 +25,7 @@ permalink: /projects/
 
   <!-- ── Projects grid ──────────────────────────────────────── -->
   <div class="projects-grid reveal-group" style="padding-bottom:5rem;">
+    {% assign sorted_projects = site.projects | sort: "date" | reverse %}
     {% for project in site.projects %}
     <article class="project-card card reveal"
              data-category="{{ project.category | slugify }}">
