@@ -1,9 +1,9 @@
 ---
 title: "Medical Delivery Drone"
-subtitle: "Designing a compliant, low-cost gripper using silicone casting and FDM molds"
-description: "A 3-finger soft robotic gripper fabricated from shore-20 silicone, driven by a compact pneumatic system. Capable of gripping irregular objects up to 400g."
+subtitle: "Developed a fixed-wing, VTOL capable drone, for the reliable delivery of 2.5 kg of medical supplies to rural clinics in the mountains of Nepal"
+description: "Fixed-wing, VTOL capable drones for delivery of up to 2.5 kg of medical supplies to clinics in rural mountain communities."
 category: mechanical
-date: 2024-05-01
+date: 2024-08-01
 featured: true
 status: Completed
 
@@ -14,17 +14,11 @@ skills:
   - SolidWorks
   - FEA
   - Mechanical Design
-  - Prototyping
+  - Rapid Prototyping
 
 stats:
-  - value: "-46%"
-    label: Volume/Weight
-  - value: "2.5 kg"
-    label: Payload
-  - value: "12 weeks"
+  - value: "10 weeks"
     label: Duration
-  - value: "1.5x"
-    label: Safety Factor
 
 gallery:
   - src: /assets/images/projects/payloadbox_view1.png
@@ -60,7 +54,8 @@ I spent the summer of 2024 in Nepal working with the National Innovation Center 
 ## Contributions
 (1) Independently designed and fabricated a full scale prototype of the drone’s internal frame from locally available balsa wood. Tested structural integrity of the design through physical tests and simulation.
 
-(2) Designed, fabricated, and tested a new door mechanism that significantly reduced weight by reducing the number of required motors from 4 to 2. With this new design the payload box doors are closed by a single continuous servo motor and released by a latch actuated with a positional servo motor. 
+(2) Led a team of 2 in the design, fabrication, and testing of a new door mechanism that significantly reduced weight by halving the number of motors required to operate. Overall the ratio of usable volume to weight was increased by > 46%.
+ 
 
 ## Outcomes
 (1) The wooden frame successfully held up to anticipated loads within a 1.5x factor of safety in physical and simulated tests. Final frame proved to be lighter and easier to assemble than previous models.
