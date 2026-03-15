@@ -23,7 +23,7 @@ stats:
     label: Duration
 
 links:
-  - label: "Report PDF"
+  - label: "Final Paper PDF"
     url: "/assets/projects/Shimandle_J_FinalPaper_2Column_2671.pdf"
 
 gallery:
