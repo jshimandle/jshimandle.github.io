@@ -5,7 +5,7 @@ subtitle: ""
 date: 2026-03-02
 category: Poetry
 read_time: 5
-tags: [poetry, making, craft]
+tags: [poetry]
 excerpt: "A prose poem."
 ---
 
