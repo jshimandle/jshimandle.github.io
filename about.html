@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-description: "About me — mechanical engineering student, writer, photographer."
+description: "About me."
 permalink: /about/
 ---
 
@@ -19,19 +19,21 @@ permalink: /about/
       </p>
       <p style="margin-top:1.2rem;color:var(--ink-2);">
         <!-- (*) Edit your bio below. Use multiple <p> tags for paragraphs. -->
-        I'm fascinated by how things work — and how they could work better.
-        My engineering coursework has given me rigorous analytical foundations,
-        while my creative pursuits keep me thinking laterally.
+        
+        I'm a currently studying Mechanical Engineering at {{ site.education.university }} with a passion for turning engineering innovation
+        into meaningful impact in the lives of those who need it most. I'm primarily interested in tackling issues of sustainability, conservation,
+        and human development with practical engineering tools. I love working across disciplines, so if you want to collaborate reach out!
+        
       </p>
-      <p style="color:var(--ink-2);">
-        When I'm not in the machine shop or the library, you'll find me chasing sunsets,
-        making music, or writing about the wonder I find in the world around me
+      <p style="margin-top:1rem;color:var(--ink-2);">
+        Outside of the lab you can find me find me chasing sunsets, making music, or writing about the wonder I find in the world around me.
+        I enjoy learning about this earth through long walks and the life stories of strangers and friends alike.
       </p>
     </div>
 
     <div class="about-photo">
       <!-- (*) Replace the placeholder below with your actual photo -->
-      <img src="/assets/images/profile.jpg" alt="Photo of {{ site.author.name }}" />
+      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Photo of {{ site.author.name }}" />
       <!--
       <div style="aspect-ratio:3/4;background:var(--accent-dim);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;">
         <i data-feather="user" style="width:64px;height:64px;color:var(--accent);opacity:.4;"></i>
@@ -107,20 +109,19 @@ permalink: /about/
     </div>
   </section>
 
-  <!-- ── WHAT I'M LOOKING FOR ────────────────────────────────── -->
-  <section style="background:var(--accent-dim);padding:2.5rem;border-radius:var(--radius-lg);margin-bottom:5rem;" class="reveal">
-    <h3 style="font-style:normal;font-size:1.1rem;font-family:var(--font-body);font-weight:700;margin-bottom:.8rem;">
-      Currently looking for…
-    </h3>
-    <!-- (*) Edit this section -->
-    <p style="color:var(--ink-2);">
-      Work in mechanical engineering or development economics for 2026.
-      Especially interested in roles touching energy systems, ag tech,
-      and human-centered design.
-    </p>
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" style="margin-top:1.2rem;">
-      Reach out →
-    </a>
-  </section>
-
 </div>
+
+
+<!-- ── CONTACT CTA ───────────────────────────────────────────── -->
+<section style="background:var(--ink);color:var(--bg);padding-block:5rem;">
+  <div class="container" style="text-align:center;">
+    <p class="section-label" style="color:var(--accent-light);justify-content:center;">Get in touch</p>
+    <h2 style="color:var(--bg);margin-bottom:1rem;">Let's work together.</h2>
+    <p style="color:rgba(247,244,239,.7);max-width:44ch;margin-inline:auto;margin-bottom:2rem;">
+      Open to collaborations and interesting conversations.
+    </p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" style="background:var(--accent);">
+      Say Hello →
+    </a>
+  </div>
+</section>
