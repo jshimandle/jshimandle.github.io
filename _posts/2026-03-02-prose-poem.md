@@ -10,6 +10,7 @@ excerpt: "A prose poem."
 ---
 
 *A prose poem I wrote for my poetry workshop class, spring of 2026.*
+
 *About life and growing up.*
 
 ---
