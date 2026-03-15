@@ -1,10 +1,146 @@
 ---
 layout: default
-title: Home
-description: "Portfolio of engineering projects, essays, photography, and creative work."
+title: About
+description: "About me."
+permalink: /about/
 ---
 
+<div class="container">
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="about-hero">
+    <div class="about-text">
+      <p class="section-label">About Me</p>
+      <h1>Hi, I'm {{ site.author.firstname }}.</h1>
+      <p class="lead" style="margin-top:1rem;">
+        <!-- (*) Edit this introduction -->
+        {{ site.education.degree }} student at {{ site.education.university }},
+        {{ site.education.year }}.
+      </p>
+      <p style="margin-top:1.2rem;color:var(--ink-2);">
+        <!-- (*) Edit your bio below. Use multiple <p> tags for paragraphs. -->
+        
+        I'm a currently studying Mechanical Engineering at {{ site.education.university }} with a passion for turning engineering innovation
+        into meaningful impact in the lives of those who need it most. I'm primarily interested in tackling issues of sustainability, conservation,
+        and human development with practical engineering tools. I love working across disciplines, so if you want to collaborate reach out!
+        
+      </p>
+      <p style="margin-top:1rem;color:var(--ink-2);">
+        Outside of the lab you can find me find me chasing sunsets, making music, or writing about the wonder I find in the world around me.
+        I enjoy learning about this earth through long walks and the life stories of strangers and friends alike.
+      </p>
+    </div>
+
+    <div class="about-photo">
+      <!-- (*) Replace the placeholder below with your actual photo -->
+      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Photo of {{ site.author.name }}" />
+      <!--
+      <div style="aspect-ratio:3/4;background:var(--accent-dim);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;">
+        <i data-feather="user" style="width:64px;height:64px;color:var(--accent);opacity:.4;"></i>
+        <p style="font-size:.85rem;color:var(--ink-3);text-align:center;padding:0 1rem;">
+          Add your photo at<br><code>assets/images/profile.jpg</code>
+        </p>
+      </div>
+      -->
+      </div>
+      <div class="hero-actions">
+        <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
+          <i data-feather="folder"></i> View Projects
+        </a>
+      </div>
+    </div>
+  
+    <div class="hero-scroll" aria-hidden="true">
+      <i data-feather="chevron-down"></i>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <hr style="border:none;border-top:1px solid var(--border);margin-bottom:4rem;">
+
+  <!-- ── INTERESTS ─────────────────────────────────────────── -->
+  <section style="margin-bottom:5rem;" class="reveal">
+    <p class="section-label">Interests</p>
+    <h2 style="margin-bottom:2rem;">What I'm into</h2>
+
+    <div class="about-interests">
+      <div class="interest-card">
+        <i data-feather="tool"></i>
+        <h4>Mechanical Design</h4>
+        <p>CAD, prototyping, and the satisfaction of building something real.</p>
+      </div>
+      <div class="interest-card">
+        <i data-feather="edit-3"></i>
+        <h4>Essay Writing</h4>
+        <p>From the french <i>essayer</i> — "to try". </p>
+      </div>
+      <div class="interest-card">
+        <i data-feather="feather"></i>
+        <h4>Poetry</h4>
+        <p>Practicing brevity and meaning.</p>
+      </div>
+      <div class="interest-card">
+        <i data-feather="camera"></i>
+        <h4>Photography</h4>
+        <p>Digital mostly.</p>
+      </div>
+      <div class="interest-card">
+        <i data-feather="music"></i>
+        <h4>Music</h4>
+        <p>Piano, guitar, or whatever's nearby. Working on my songwriting and production. </p>
+      </div>
+      <!--
+      <div class="interest-card">
+        <i data-feather="image"></i>
+        <h4>Visual Art</h4>
+        <p>Drawing, printmaking, and experiments with form and space.</p>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ─────────────────────────────────────────── -->
+  <section style="margin-bottom:5rem;" class="reveal">
+    <p class="section-label">Background</p>
+    <h2 style="margin-bottom:2rem;">Education</h2>
+
+    <!-- (*) Edit or duplicate this block for each school -->
+    <div class="resume-entry">
+      <div class="resume-entry-header">
+        <div>
+          <h3>{{ site.education.university }}</h3>
+          <p class="resume-entry-sub">{{ site.education.degree }}</p>
+        </div>
+        <span class="resume-entry-date">{{ site.education.year }}</span>
+      </div>
+      <ul style="padding-left:1.2em;margin-top:.5rem;">
+        <li style="list-style:disc;font-size:.9rem;color:var(--ink-2);">Relevant  coursework: Mechanics, Materials, Thermal-Fluids Engineering (TA'd), Design, Manufacturing, Dynamics, Controls, Sensing & Instrumentation, Sustainable Energy, Microeconomics, Political Economy</li>
+        <li style="list-style:disc;font-size:.9rem;color:var(--ink-2);">GPA: 4.9 / 5.0</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!-- ── CONTACT CTA ───────────────────────────────────────────── -->
+<section style="background:var(--ink);color:var(--bg);padding-block:5rem;">
+  <div class="container" style="text-align:center;">
+    <p class="section-label" style="color:var(--accent-light);justify-content:center;">Get in touch</p>
+    <h2 style="color:var(--bg);margin-bottom:1rem;">Let's work together.</h2>
+    <p style="color:rgba(247,244,239,.7);max-width:44ch;margin-inline:auto;margin-bottom:2rem;">
+      Open to collaborations and interesting conversations.
+    </p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" style="background:var(--accent);">
+      Say Hello →
+    </a>
+  </div>
+</section>
+
+
+
+
 <!-- ── HERO ────────────────────────────────────────────────── -->
+<!--
 <section class="hero">
   <div class="container hero-inner">
     <p class="hero-eyebrow">{{ site.education.degree }} · {{ site.education.university }}</p>
@@ -36,6 +172,7 @@ description: "Portfolio of engineering projects, essays, photography, and creati
 </section>
 
 <!-- ── CATEGORIES STRIP ──────────────────────────────────────── -->
+<!--
 <section class="categories-strip">
   <div class="container categories-grid">
     <a href="{{ '/projects/' | relative_url }}" class="category-chip">
@@ -58,153 +195,4 @@ description: "Portfolio of engineering projects, essays, photography, and creati
     </a>
   </div>
 </section>
-
-<!-- ── FEATURED PROJECTS ──────────────────────────────────────── -->
-<section class="home-section section">
-  <div class="container">
-    <div class="home-section-header">
-      <div>
-        <p class="section-label">Work</p>
-        <h2>Featured Projects</h2>
-      </div>
-      <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline">All Projects →</a>
-    </div>
-
-    <div class="projects-grid reveal-group">
-      {% assign featured = site.projects | where: "featured", true | limit: 3 %}
-      {% if featured.size == 0 %}
-        {% assign featured = site.projects | limit: 3 %}
-      {% endif %}
-
-      {% for project in featured %}
-      <article class="project-card card reveal" data-category="{{ project.category | slugify }}">
-        <div class="card-image">
-          {% if project.thumbnail %}
-          <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}" loading="lazy" />
-          {% else %}
-          <div class="placeholder-img">
-            <i data-feather="tool"></i>
-          </div>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <p class="card-category">{{ project.category | default: "Engineering" }}</p>
-          <h3 class="card-title">{{ project.title }}</h3>
-          <p class="card-excerpt">{{ project.excerpt | default: project.description }}</p>
-          <div class="card-footer">
-            <div>
-              {% for skill in project.skills limit:3 %}
-              <span class="tag">{{ skill }}</span>
-              {% endfor %}
-            </div>
-            <a href="{{ project.url | relative_url }}" class="card-link">
-              View <i data-feather="arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-      {% endfor %}
-
-      <!-- Placeholder cards shown when no projects exist yet -->
-      {% if site.projects.size == 0 %}
-      <article class="project-card card reveal">
-        <div class="card-image"><div class="placeholder-img"><i data-feather="tool"></i></div></div>
-        <div class="card-body">
-          <p class="card-category">Mechanical Engineering</p>
-          <h3 class="card-title">Your Project Title</h3>
-          <p class="card-excerpt">Add a project by creating a file in _projects/. See the README for details.</p>
-          <div class="card-footer">
-            <span class="tag">CAD</span>
-            <a href="{{ '/projects/' | relative_url }}" class="card-link">View <i data-feather="arrow-right"></i></a>
-          </div>
-        </div>
-      </article>
-      {% endif %}
-    </div>
-  </div>
-</section>
-
-<!-- ── RECENT WRITING ────────────────────────────────────────── -->
-<section class="home-section section" style="background:var(--bg-card); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <div class="container">
-    <div class="home-section-header">
-      <div>
-        <p class="section-label">Writing</p>
-        <h2>Recent Posts</h2>
-      </div>
-      <a href="{{ '/blog/' | relative_url }}" class="btn btn-outline">All Posts →</a>
-    </div>
-
-    <div class="posts-list reveal-group">
-      {% for post in site.posts limit:4 %}
-      <div class="post-preview reveal">
-        <time class="post-preview-date" datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%b %-d,\n%Y" }}
-        </time>
-        <div>
-          <a href="{{ post.url | relative_url }}">
-            <h3 class="post-preview-title">{{ post.title }}</h3>
-          </a>
-          <p class="post-preview-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
-          <div class="post-preview-meta">
-            {% if post.category %}<span class="tag">{{ post.category }}</span>{% endif %}
-            {% for tag in post.tags limit:2 %}<span class="tag">{{ tag }}</span>{% endfor %}
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-
-      {% if site.posts.size == 0 %}
-      <div class="post-preview">
-        <time class="post-preview-date">Coming soon</time>
-        <div>
-          <h3 class="post-preview-title">Your first post</h3>
-          <p class="post-preview-excerpt">Create a Markdown file in _posts/ to start your blog. See README for details.</p>
-        </div>
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</section>
-
-<!-- ── ABOUT SNIPPET ─────────────────────────────────────────── -->
-<section class="home-section section">
-  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
-    <div class="reveal">
-      <p class="section-label">About</p>
-      <h2>A bit about me</h2>
-      <p class="lead" style="margin-top:1rem;">
-        I'm a currently pursuing a B.S. in Mechanical Engineering at {{ site.education.university }} with a passion for turning engineering innovation
-        into meaningful impact in the lives of those who need it most. I'm primarily interested in tackling issues of sustainability, conservation,
-        and human development with practical engineering tools. I love working across displines, so if you want to collaborate, reach out!
-        
-      </p>
-      <p style="margin-top:1rem;color:var(--ink-2);">
-        Outside of the lab I enjoy capturing the beauty in this world and telling its story through photography, music, and writing both prose and poetry.
-        I like learning about the earth through long walks and life stories while getting lost in the people and places I meet along the way.
-        
-
-      </p>
-      <a href="{{ '/about/' | relative_url }}" class="btn btn-outline" style="margin-top:1.5rem;">
-        Full Bio →
-      </a>
-    </div>
-    <div class="reveal" style="text-align:center;padding:2rem;background:var(--accent-dim);border-radius:var(--radius-lg);">
-      <img src="/assets/images/profile.jpg" style="border-radius:var(--radius-lg);">
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT CTA ───────────────────────────────────────────── -->
-<section style="background:var(--ink);color:var(--bg);padding-block:5rem;">
-  <div class="container" style="text-align:center;">
-    <p class="section-label" style="color:var(--accent-light);justify-content:center;">Get in touch</p>
-    <h2 style="color:var(--bg);margin-bottom:1rem;">Let's work together.</h2>
-    <p style="color:rgba(247,244,239,.7);max-width:44ch;margin-inline:auto;margin-bottom:2rem;">
-      Open to collaborations and interesting conversations.
-    </p>
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary" style="background:var(--accent);">
-      Say Hello →
-    </a>
-  </div>
-</section>
+-->
