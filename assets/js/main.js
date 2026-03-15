@@ -104,4 +104,66 @@ document.addEventListener('DOMContentLoaded', () => {
     if (a.getAttribute('href') === currentPath) a.classList.add('active');
   });
 
+  // ── Lightbox ─────────────────────────────────────────────────
+  const lightbox     = document.getElementById('lightbox');
+  if (lightbox) {
+    const lbImg      = document.getElementById('lightbox-img');
+    const lbCaption  = document.getElementById('lightbox-caption');
+    const lbCounter  = document.getElementById('lightbox-counter');
+    const lbClose    = document.getElementById('lightbox-close');
+    const lbPrev     = document.getElementById('lightbox-prev');
+    const lbNext     = document.getElementById('lightbox-next');
+
+    const triggers = Array.from(document.querySelectorAll('.lightbox-trigger'));
+    let current = 0;
+
+    function showImage(index) {
+      current = (index + triggers.length) % triggers.length;
+      const t = triggers[current];
+      lbImg.src     = t.dataset.src;
+      lbImg.alt     = t.dataset.alt || '';
+      lbCaption.textContent = t.dataset.caption || '';
+      lbCounter.textContent = triggers.length > 1
+        ? `${current + 1} / ${triggers.length}` : '';
+      // Show/hide arrows when only one image
+      lbPrev.hidden = lbNext.hidden = triggers.length <= 1;
+    }
+
+    function openLightbox(index) {
+      showImage(index);
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      document.body.style.overflow = '';
+      triggers[current].focus();
+    }
+
+    // Open on click
+    triggers.forEach((btn, i) =>
+      btn.addEventListener('click', () => openLightbox(i))
+    );
+
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', () => showImage(current - 1));
+    lbNext.addEventListener('click', () => showImage(current + 1));
+
+    // Close on backdrop click (outside the image)
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (lightbox.hidden) return;
+      if (e.key === 'Escape')      closeLightbox();
+      if (e.key === 'ArrowLeft')   showImage(current - 1);
+      if (e.key === 'ArrowRight')  showImage(current + 1);
+    });
+  }
+
+
 });
