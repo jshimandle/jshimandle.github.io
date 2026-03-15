@@ -1,7 +1,7 @@
 /* ============================================================
    DESIGN SYSTEM
    Aesthetic: Editorial / Refined Minimalism
-   Palette: Warm ivory background, deep ink text, terracotta accent
+   Palette: Warm ivory background, deep ink text, blue accent
    Typography: Playfair Display (display) + DM Sans (body) + DM Mono (code)
    ============================================================ */
 
@@ -820,6 +820,7 @@ p + p { margin-top: 1.1em; }
   gap: 1rem;
   margin-top: 1.5rem;
 }
+/*
 .gallery-item img {
   aspect-ratio: 4/3;
   object-fit: cover;
@@ -835,6 +836,155 @@ p + p { margin-top: 1.1em; }
   margin-top: .4em;
   text-align: center;
 }
+*/
+.gallery-item img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  transition: box-shadow var(--transition), transform var(--transition);
+  display: block;
+  pointer-events: none;
+}
+.gallery-item figcaption {
+  font-size: .8rem;
+  color: var(--ink-3);
+  margin-top: .4em;
+  text-align: center;
+}
+
+/* ── Lightbox trigger button ────────────────────────────────── */
+.lightbox-trigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.lightbox-trigger:hover img {
+  transform: scale(1.04);
+  box-shadow: var(--shadow);
+}
+.lightbox-trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Zoom icon overlay */
+.gallery-zoom-hint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26,24,20,.35);
+  color: #fff;
+  opacity: 0;
+  transition: opacity var(--transition);
+  border-radius: var(--radius);
+}
+.lightbox-trigger:hover .gallery-zoom-hint { opacity: 1; }
+
+/* ── Lightbox overlay ────────────────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(15,13,10,.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: lb-fade-in .18s ease;
+}
+.lightbox[hidden] { display: none; }
+
+@keyframes lb-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.lightbox-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(1100px, 100%);
+  max-height: 100%;
+  animation: lb-scale-in .2s ease;
+}
+@keyframes lb-scale-in {
+  from { transform: scale(.94); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: calc(100svh - 8rem);
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 24px 80px rgba(0,0,0,.6);
+  display: block;
+}
+
+.lightbox-caption {
+  margin-top: 1rem;
+  color: rgba(247,244,239,.85);
+  font-size: .92rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 60ch;
+}
+.lightbox-caption:empty { display: none; }
+
+.lightbox-counter {
+  margin-top: .4rem;
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  color: rgba(247,244,239,.4);
+  letter-spacing: .08em;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  color: rgba(247,244,239,.7);
+  padding: .5em;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  z-index: 1;
+}
+.lightbox-close:hover { color: #fff; background: rgba(255,255,255,.1); }
+
+.lightbox-prev,
+.lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(247,244,239,.7);
+  padding: .8em;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.08);
+  transition: color var(--transition), background var(--transition);
+  z-index: 1;
+}
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+.lightbox-prev:hover,
+.lightbox-next:hover { color: #fff; background: rgba(255,255,255,.18); }
+.lightbox-prev[hidden],
+.lightbox-next[hidden] { display: none; }
+
+@media (max-width: 480px) {
+  .lightbox-prev { left: .3rem; }
+  .lightbox-next { right: .3rem; }
+}
+
 
 /* ══════════════════════════════════════════════════════════════
    BLOG PAGE
