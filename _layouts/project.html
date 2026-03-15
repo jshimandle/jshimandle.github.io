@@ -6,7 +6,7 @@ layout: default
     <a href="{{ '/projects/' | relative_url }}" class="back-link">← All Projects</a>
     <div class="project-meta-bar">
       <span class="project-tag">{{ page.category | default: "Engineering" }}</span>
-      {% if page.date %}<time>{{ page.date | date: "%Y" }}</time>{% endif %}
+      {% if page.date %}<time>{{ page.date | date: "%Y%M" }}</time>{% endif %}
       {% if page.status %}<span class="project-status status-{{ page.status | downcase }}">{{ page.status }}</span>{% endif %}
     </div>
     <h1 class="project-title">{{ page.title }}</h1>
