@@ -36,6 +36,9 @@ gallery:
   - src: /assets/images/projects/poster_pose_2671.png
     alt: "Poster presentation"
     caption: "Presenting the poster."
+  - src: /assets/images/projects/expsetup_2671.jpg
+    alt: "Experimental setup"
+    caption: "Experimental setup in progress."
     
 
 tags: [experimental design, instrumentation]
