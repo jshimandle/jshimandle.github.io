@@ -22,6 +22,10 @@ stats:
   - value: "12 weeks"
     label: Duration
 
+links:
+  - label: "Report PDF"
+    url: "/assets/projects/Shimandle_J_FinalPaper_2Column_2671.pdf"
+
 gallery:
   - src: /assets/images/projects/visual_abstract_2671.png
     alt: "Visual abstract"
