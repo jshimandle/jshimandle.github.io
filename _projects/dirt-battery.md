@@ -7,7 +7,7 @@ date: 2025-05-01
 featured: true
 status: Completed
 
-thumbnail: /assets/images/projects/poster_pose_2671.jpeg
+thumbnail: /assets/images/projects/poster_pose_2671.JPEG
 hero_image: /assets/images/projects/poster_2671.png
 
 skills:
@@ -33,10 +33,10 @@ gallery:
   - src: /assets/images/projects/poster_2671.png
     alt: "Poster"
     caption: "Final poster for the class."
-  - src: /assets/images/projects/poster_pose_2671.jpeg
+  - src: /assets/images/projects/poster_pose_2671.JPEG
     alt: "Poster presentation"
     caption: "Presenting the poster."
-  - src: /assets/images/projects/expsetup_2671.jpeg
+  - src: /assets/images/projects/expsetup_2671.JPEG
     alt: "Experimental setup"
     caption: "Experimental setup in progress."
     
