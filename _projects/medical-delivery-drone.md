@@ -54,12 +54,15 @@ I spent the summer of 2024 in Nepal working with the National Innovation Center 
 
 ## Objectives
 (1) Design, build, and test the internal structure for a fixed wing medical delivery drone that can be affordably fabricated in Nepal with locally available resources.
+
 (2) Redesign, fabricate, and test the structure and actuating mechanism for a medical delivery drone payload box to minimize weight and maximize usable volume.
 
 ## Contributions
 (1) Independently designed and fabricated a full scale prototype of the drone’s internal frame from locally available balsa wood. Tested structural integrity of the design through physical tests and simulation.
+
 (2) Designed, fabricated, and tested a new door mechanism that significantly reduced weight by reducing the number of required motors from 4 to 2. With this new design the payload box doors are closed by a single continuous servo motor and released by a latch actuated with a positional servo motor. 
 
 ## Outcomes
 (1) The wooden frame successfully held up to anticipated loads within a 1.5x factor of safety in physical and simulated tests. Final frame proved to be lighter and easier to assemble than previous models.
+
 (2) Successfully increased storage volume to weight ratio by over 46% while reliably performing >100 consecutive operation cycles and supporting the intended payload of 2.5 kg.
