@@ -1,10 +1,12 @@
 ---
 layout: default
 title: Resume
+<!--
 description: "Resume and CV."
+-->
 permalink: /resume/
 ---
-
+<!--
 <div class="container resume-page">
   <div class="resume-header">
     <div>
@@ -13,6 +15,8 @@ permalink: /resume/
     </div>
     <div style="display:flex;gap:.8rem;flex-wrap:wrap;">
       <!-- (*) Upload your PDF to assets/ and update this link -->
+
+<!--
       <a href="{{ '/assets/resume.pdf' | relative_url }}" class="btn btn-primary" download>
         <i data-feather="download"></i> Download PDF
       </a>
@@ -23,10 +27,14 @@ permalink: /resume/
   </div>
 
   <!-- ── EDUCATION ─────────────────────────────────────────── -->
+
+<!--
   <section class="resume-section reveal">
     <h2>Education</h2>
 
     <!-- (*) Edit these entries -->
+
+<!--
     <div class="resume-entry">
       <div class="resume-entry-header">
         <div>
@@ -44,10 +52,14 @@ permalink: /resume/
   </section>
 
   <!-- ── EXPERIENCE ────────────────────────────────────────── -->
+
+<!--
   <section class="resume-section reveal">
     <h2>Experience</h2>
 
     <!-- (*) Add your internships / research / jobs here -->
+
+<!--
     <div class="resume-entry">
       <div class="resume-entry-header">
         <div>
@@ -78,6 +90,8 @@ permalink: /resume/
   </section>
 
   <!-- ── PROJECTS ───────────────────────────────────────────── -->
+
+<!--
   <section class="resume-section reveal">
     <h2>Selected Projects</h2>
     {% for project in site.projects limit:4 %}
@@ -99,12 +113,16 @@ permalink: /resume/
   </section>
 
   <!-- ── SKILLS ────────────────────────────────────────────── -->
+
+<!--
   <section class="resume-section reveal">
     <h2>Skills</h2>
 
     <div style="margin-bottom:1.5rem;">
       <h4 style="font-size:.82rem;color:var(--ink-3);margin-bottom:.8rem;letter-spacing:.08em;">Software & Tools</h4>
       <!-- (*) Edit these -->
+
+<!--
       <div class="skills-grid">
         <span class="skill-item">SolidWorks</span>
         <span class="skill-item">AutoCAD</span>
@@ -133,14 +151,20 @@ permalink: /resume/
       <div class="skills-grid">
         <span class="skill-item">English (native)</span>
         <!-- (*) add others -->
+
+<!--
       </div>
     </div>
   </section>
 
   <!-- ── ACTIVITIES ─────────────────────────────────────────── -->
+
+<!--
   <section class="resume-section reveal">
     <h2>Activities & Leadership</h2>
     <!-- (*) Edit -->
+
+<!--
     <div class="resume-entry">
       <div class="resume-entry-header">
         <h3>Engineering Club / Team</h3>
@@ -152,16 +176,13 @@ permalink: /resume/
       </ul>
     </div>
   </section>
-
+-->
+  
   <!-- ── Embedded PDF preview (optional) ──────────────────── -->
-  <!--
-    Uncomment this block after uploading your PDF:
-  <section class="resume-section reveal">
     <h2>Full PDF</h2>
     <div class="pdf-embed">
       <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%" title="Resume PDF"></iframe>
     </div>
   </section>
-  -->
 
 </div>
