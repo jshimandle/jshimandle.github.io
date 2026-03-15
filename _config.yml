@@ -19,7 +19,7 @@ baseurl: ""  # leave empty unless repo is a project page (not username.github.io
 author:
   name: "Josiah Shimandle"
   firstname: "Josiah"
-  email: "jlshim@mit.edu"
+  email: ""
   github: "jshimandle"
   linkedin: "josiah-shimandle"
   twitter: ""          # optional
