@@ -2,7 +2,7 @@
 title: "Medical Delivery Drone"
 subtitle: "Developed a fixed-wing, VTOL capable drone, for the reliable delivery of 2.5 kg of medical supplies to rural clinics in the mountains of Nepal"
 description: "Fixed-wing, VTOL capable drones for delivery of up to 2.5 kg of medical supplies to clinics in rural mountain communities."
-category: mechanical
+category: work
 date: 2024-06-01
 featured: true
 status: Completed
