@@ -7,8 +7,8 @@ date: 2023-06-01
 featured: true
 status: Completed
 
-thumbnail: /assets/images/projects/gas_analyzer_1
-hero_image: /assets/images/projects/gas_analyzer_x
+thumbnail: /assets/images/projects/gas_analyzer_1.png
+hero_image: /assets/images/projects/gas_analyzer_x.png
 
 skills:
   - SolidWorks
@@ -21,16 +21,16 @@ stats:
     label: Duration
 
 gallery:
-  - src: /assets/images/projects/gas_analyzer_0
+  - src: /assets/images/projects/gas_analyzer_0.png
     alt: "Housing CAD"
     caption: "CAD model of final sensor housing."
-  - src: /assets/images/projects/gas_analyzer_x
+  - src: /assets/images/projects/gas_analyzer_x.png
     alt: "Housing cross section"
     caption: "Cross section of the sensor housing."
-  - src: /assets/images/projects/gas_analyzer_1
+  - src: /assets/images/projects/gas_analyzer_1.png
     alt: "Analyzer 1"
     caption: "Complete gas analyzer assembly."
-  - src: /assets/images/projects/gas_analyzer_2
+  - src: /assets/images/projects/gas_analyzer_2.png
     alt: "Analyzer 2"
     caption: "Gas analyzer attached to an artificial cow-lung for testing."
 
