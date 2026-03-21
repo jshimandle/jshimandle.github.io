@@ -50,6 +50,6 @@ As part of MIT's core Sensing and Instrumentation course for MechE I independent
 ## Objectives
 
 ## Contributions
-Collected, processed, and analyzed >100 hours of experimental data across 9 soil compositions, demonstrating significant correlation between storage efficiency and water content/density.
+I collected, processed, and analyzed >100 hours of experimental data across 9 distinct soil compositions. Through my analysis I found a significant correlation between the round trip efficiency of the heating/cooling process and soil water content & density.
 
 ## Outcomes
