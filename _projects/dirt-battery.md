@@ -45,9 +45,7 @@ tags: [experimental design, instrumentation]
 ---
 
 ## Overview & Motivation
-I took MIT's Sensing and Instrumentation course in the spring of 2025. The focus of this course is an independent project focused on measuring something.
-I chose to characterize the performance of soil as a thermal storage medium, to explore the possibility of using dirt as a low-cost medium for energy storage
-in rural, off-grid communities.
+As part of MIT's core Sensing and Instrumentation course for MechE I independently worked to characterize the performance of soil as a thermal storage medium. This project was motivated by a desire to explore the possibility of using dirt as a low-cost medium for energy storage in rural, off-grid communities.
 
 ## Objectives
 
