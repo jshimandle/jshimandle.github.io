@@ -8,7 +8,7 @@ featured: true
 status: Completed
 
 thumbnail: /assets/images/projects/gas_analyzer_1.png
-hero_image: /assets/images/projects/gas_analyzer_1.png
+hero_image: /assets/images/projects/gas_analyzer_x.png
 
 skills:
   - SolidWorks
