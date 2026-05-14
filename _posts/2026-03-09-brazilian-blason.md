@@ -9,16 +9,16 @@ tags: [poetry]
 excerpt: "A love poem."
 ---
 
-The sun rises so joyfully behind you.
-The day passes with a turn of your head,
-And the moonlight hits your face softly 
-Like the snow on your hair—
+The sun rises so joyfully behind you.  
+The day passes with a turn of your head,  
+And the moonlight hits your face softly  
+Like the snow on your hair—  
 Delicate and pure.
 
-I love your hair, bristly and pine;
-Tall and strong, it builds my home
-And warms me through cold winters.
-I love the breath you breathe.
+I love your hair, bristly and pine;\
+Tall and strong, it builds my home\
+And warms me through cold winters.\
+I love the breath you breathe.\
 I surely live by it.
 
 Your eyes are an ocean,
