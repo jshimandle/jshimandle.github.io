@@ -47,6 +47,6 @@ Sunsets are so beautiful.
 
 ---
 
-*A love poem I wrote for my poetry workshop class, spring of 2026.*
+*A love poem I wrote for my poetry workshop class in the spring of 2026.*
 
 *To the earth from an oil baron.*
